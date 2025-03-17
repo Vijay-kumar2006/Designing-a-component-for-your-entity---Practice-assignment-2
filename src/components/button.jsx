@@ -1,11 +1,22 @@
-// write button card here
+import React from 'react';
 
-import react from 'react'
-
-const viweProduct =()=>{
+const ViewProduct = () => {
   return (
-    <button>Viwe Product</button>
+    <button style={buttonStyle} onClick={() => alert('Viewing Product Details')}>
+      View Product
+    </button>
   );
 };
 
-export default viweProduct;
+const buttonStyle = {
+  backgroundColor: '#007bff',
+  color: '#fff',
+  border: 'none',
+  padding: '10px 20px',
+  fontSize: '16px',
+  cursor: 'pointer',
+  borderRadius: '5px',
+  marginTop: '10px',
+};
+
+export default ViewProduct;
